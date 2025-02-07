@@ -5,14 +5,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #008CFF;
+  --light: #848484;
 }
 
-@media (prefers-color-scheme: dark) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
