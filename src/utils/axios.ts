@@ -29,5 +29,6 @@ export const fetcher = async (args: string | [string, AxiosRequestConfig]) => {
 export const ENDPOINTS = {
   auth: {
     login: "/api/auth/login",
+    signup: "/api/auth/signup",
   },
 };
