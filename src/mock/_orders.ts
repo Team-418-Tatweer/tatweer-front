@@ -1,0 +1,58 @@
+import { IOrder } from "@/types/Order";
+
+export const _orders: IOrder[] = [
+  {
+    id: "1",
+    client: "Client 1",
+    address: "Address 1",
+    date: "2021-01-01",
+    Region: "Region 1",
+    totalPrice: 100,
+    status: "pending",
+  },
+  {
+    id: "2",
+    client: "Client 2",
+    address: "Address 2",
+    date: "2021-01-02",
+    Region: "Region 1",
+    totalPrice: 200,
+    status: "completed",
+  },
+  {
+    id: "3",
+    client: "Client 3",
+    address: "Address 3",
+    date: "2021-01-03",
+    Region: "Region 1",
+    totalPrice: 300,
+    status: "cancelled",
+  },
+  {
+    id: "4",
+    client: "Client 4",
+    address: "Address 4",
+    date: "2021-01-04",
+    Region: "Region 1",
+    totalPrice: 400,
+    status: "pending",
+  },
+  {
+    id: "5",
+    client: "Client 5",
+    address: "Address 5",
+    date: "2021-01-05",
+    Region: "Region 1",
+    totalPrice: 500,
+    status: "completed",
+  },
+  {
+    id: "6",
+    client: "Client 6",
+    address: "Address 6",
+    date: "2021-01-06",
+    Region: "Region 1",
+    totalPrice: 600,
+    status: "cancelled",
+  },
+];

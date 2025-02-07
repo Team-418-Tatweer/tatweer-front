@@ -5,4 +5,7 @@ export const ROUTES = {
   dashboard: "/dashboard",
   resetPassword: "/reset-password",
   forgotPassword: "/forgot-password",
+  sales: {
+    ordersList: "/dashboard/sales/orders",
+  },
 };

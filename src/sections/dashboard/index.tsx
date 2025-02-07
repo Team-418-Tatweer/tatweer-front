@@ -54,13 +54,18 @@ const cards = [
 
 export function DashboardSection() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8">
-      {cards.map((card, index) => (
-        <DashboardWidget key={index} {...card} />
-      ))}
-      <Card className="col-span-2 lg:col-span-3">
-        <SalesChart />
-      </Card>
+    <div>
+      <h1 className="font-extrabold text-primary text-4xl my-5">Dashboard</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-8">
+        {cards.map((card, index) => (
+          <DashboardWidget key={index} {...card} />
+        ))}
+        <Card
+          className="col-span-5 sm:grid-cols-3 lg:col
+      -span-3">
+          <SalesChart />
+        </Card>
+      </div>
     </div>
   );
 }

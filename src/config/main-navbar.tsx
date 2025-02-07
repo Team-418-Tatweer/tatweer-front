@@ -5,6 +5,7 @@ import { LuBadgeHelp, LuChartColumn } from "react-icons/lu";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiShieldUserLine, RiShoppingBag3Line } from "react-icons/ri";
 import { TbBuildingWarehouse } from "react-icons/tb";
+import { ROUTES } from "./routes";
 
 export const navData: INavItem[] = [
   {
@@ -16,7 +17,10 @@ export const navData: INavItem[] = [
     title: "Sales",
     Icon: <FaTasks />,
     childs: [
-      { title: "Orders", path: "/sales/orders" },
+      {
+        title: "Orders",
+        path: ROUTES.sales.ordersList,
+      },
       { title: "Customers", path: "/sales/customers" },
       { title: "Invoices", path: "/sales/invoices" },
     ],
