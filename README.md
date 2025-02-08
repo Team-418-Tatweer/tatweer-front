@@ -46,12 +46,12 @@ To set up the SynexFlow Dashboard locally, follow these steps:
 4. **Run the application**:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 5. **Access the dashboard**:
 
-   Open your browser and navigate to `http://localhost:5000`.
+   Open your browser and navigate to `http://localhost:3000`.
 
 ## Usage
 
