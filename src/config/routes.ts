@@ -15,4 +15,8 @@ export const ROUTES = {
     transfers: "/dashboard/inventory/transfers",
     addSuplier: "/dashboard/inventory/add-supplier",
   },
+  alerts: {
+    base: "/dashboard/alerts",
+    details: (id: string) => `/dashboard/alerts/${id}`,
+  },
 };
