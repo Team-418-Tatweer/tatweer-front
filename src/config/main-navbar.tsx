@@ -22,8 +22,8 @@ export const navData: INavItem[] = [
         title: "Orders",
         path: ROUTES.sales.ordersList,
       },
-      { title: "Customers", path: "/sales/customers" },
-      { title: "Invoices", path: "/sales/invoices" },
+      { title: "Customers", path: "/dashboard/sales/customers" },
+      { title: "Invoices", path: "/dashboard/sales/invoices" },
     ],
   },
   {
