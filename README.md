@@ -16,9 +16,6 @@ Welcome to the SynexFlow Dashboard repository! This project is designed to provi
 
 - **Frontend**: React.js, Chart.js, CSS
 - **Backend**: Node.js, Express.js
-- **Database**: MongoDB (or your preferred database)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Deployment**: Docker, Heroku (or your preferred hosting service)
 
 ## Getting Started
 
@@ -45,15 +42,6 @@ To set up the SynexFlow Dashboard locally, follow these steps:
    npm install
    ```
 
-3. **Set up environment variables**:
-
-   Create a `.env` file in the root directory and add the following variables:
-
-   ```
-   PORT=5000
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   ```
 
 4. **Run the application**:
 
