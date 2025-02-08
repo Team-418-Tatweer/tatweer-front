@@ -16,6 +16,7 @@ export const navData: INavItem[] = [
   {
     title: "Sales",
     Icon: <FaTasks />,
+    path: "/dashboard/sales",
     childs: [
       {
         title: "Orders",

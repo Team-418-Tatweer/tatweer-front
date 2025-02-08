@@ -1,6 +1,7 @@
 "use client";
 
 import CollapsibleContent from "@/components/CollapsibleContent";
+import { ROUTES } from "@/config/routes";
 import { INavItem } from "@/types/NavItem";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -26,22 +27,26 @@ export function NavGroup({ Icon, path, title, childs, depth, isOpen, onOpen }: p
       onOpen();
     }
   }, [pathName, path]);
+
+  let isPathActive = path ? pathName.includes(path) : false;
+  if (path === ROUTES.dashboard) isPathActive = pathName === path;
+
   return (
     <div>
       <Link
-        href={path || ""}
+        href={childs ? "#" : path || ""}
         onClick={onOpen}
         style={{ marginLeft: `${depth * 10}px` }}
         className={`flex items-center gap-3 rounded-lg px-3 py-1 min-w-max
 				${depth > 0 ? "text-md text-light" : "text-lg"}
-				${pathName === path ? "text-white bg-primary" : ""}`}>
-        <span className={pathName === path ? "text-white bg-primary" : "text-primary"}>
+				${isPathActive ? "text-white bg-primary" : ""}`}>
+        <span className={isPathActive ? "text-white bg-primary" : "text-primary"}>
           {Icon || <IoIosArrowForward />}
         </span>
         <span>{title}</span>
         {childs && (
           <RiArrowRightSLine
-            className={`transition-transform ${!isOpen ? "" : "rotate-90"}`}
+            className={`transition-transform ${!isOpen ? "" : "rotate-90"}  ml-auto`}
           />
         )}
       </Link>
