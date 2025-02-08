@@ -22,8 +22,8 @@ export const navData: INavItem[] = [
         title: "Orders",
         path: ROUTES.sales.ordersList,
       },
-      { title: "Customers", path: "/sales/customers" },
-      { title: "Invoices", path: "/sales/invoices" },
+      { title: "Customers", path: "/dashboard/sales/customers" },
+      { title: "Invoices", path: "/dashboard/sales/invoices" },
     ],
   },
   {
@@ -38,10 +38,11 @@ export const navData: INavItem[] = [
   {
     title: "Inventory",
     Icon: <TbBuildingWarehouse />,
+    path: ROUTES.inventory.basePath,
     childs: [
-      { title: "Stock Levels", path: "/inventory/stock" },
-      { title: "Suppliers", path: "/inventory/suppliers" },
-      { title: "Inventory Transfers", path: "/inventory/transfers" },
+      { title: "Stock Levels", path: ROUTES.inventory.stock },
+      { title: "Suppliers", path: ROUTES.inventory.suppliers },
+      { title: "Inventory Transfers", path: ROUTES.inventory.transfers },
     ],
   },
   {

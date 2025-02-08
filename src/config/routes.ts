@@ -8,4 +8,11 @@ export const ROUTES = {
   sales: {
     ordersList: "/dashboard/sales/orders",
   },
+  inventory: {
+    basePath: "/dashboard/inventory",
+    stock: "/dashboard/inventory/stock",
+    suppliers: "/dashboard/inventory/suppliers",
+    transfers: "/dashboard/inventory/transfers",
+    addSuplier: "/dashboard/inventory/add-supplier",
+  },
 };

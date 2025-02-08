@@ -1,0 +1,53 @@
+import { IMAGES_PATHS } from "@/config/images";
+import { IStock } from "@/types/Stock";
+
+export const _stocks: IStock[] = [
+  {
+    id: "1",
+    name: "Product 1",
+    price: 29.99,
+    quantity: 100,
+    supplier: "Supplier A",
+    category: "Electronics",
+    date: "2024-01-15",
+    status: "available",
+    description: "High-quality electronic product",
+    image: IMAGES_PATHS.product,
+  },
+  {
+    id: "2",
+    name: "Product 2",
+    price: 49.99,
+    quantity: 0,
+    supplier: "Supplier B",
+    category: "Accessories",
+    date: "2024-01-14",
+    status: "out of stock",
+    description: "Premium accessory",
+    image: IMAGES_PATHS.product,
+  },
+  {
+    id: "3",
+    name: "Product 3",
+    price: 19.99,
+    quantity: 50,
+    supplier: "Supplier C",
+    category: "Clothing",
+    date: "2024-01-13",
+    status: "available",
+    description: "Fashionable clothing item",
+    image: IMAGES_PATHS.product,
+  },
+  {
+    id: "4",
+    name: "Product 4",
+    price: 39.99,
+    quantity: 75,
+    supplier: "Supplier A",
+    category: "Electronics",
+    date: "2024-01-12",
+    status: "available",
+    description: "Electronic accessories",
+    image: IMAGES_PATHS.product,
+  },
+];
