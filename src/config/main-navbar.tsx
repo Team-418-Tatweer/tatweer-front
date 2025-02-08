@@ -30,9 +30,9 @@ export const navData: INavItem[] = [
     title: "Products",
     Icon: <RiShoppingBag3Line />,
     childs: [
-      { title: "All Products", path: "/products/all" },
-      { title: "Categories", path: "/products/categories" },
-      { title: "Add New Product", path: "/products/new" },
+      { title: "All Products", path: "/dashboard/products/All" },
+      { title: "Prodcut Analytics", path: "/dashboard/products/reports" },
+      { title: "Add New Product", path: "/dashboard/products/add" },
     ],
   },
   {

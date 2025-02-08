@@ -2,6 +2,7 @@
 import React from "react";
 import { IOrder } from "@/types/Order";
 import { OrdersTableFilter } from "./OrdersTableFilter";
+import { useRouter } from "next/navigation";
 
 interface OrdersTableProps {
   orders: IOrder[];
@@ -18,6 +19,12 @@ const table_headers: (keyof IOrder)[] = [
 ];
 
 export function OrdersTable({ orders }: OrdersTableProps) {
+  const router = useRouter();
+
+  const handleRowClick = (orderId: string) => {
+    router.push(`/dashboard/sales/orders/${orderId}`);
+  };
+
   return (
     <div className="max-w-7xl mx-auto  p-6 rounded-lg ">
       <div className="overflow-x-auto">
@@ -34,7 +41,7 @@ export function OrdersTable({ orders }: OrdersTableProps) {
           </thead>
           <tbody className="bg-white text-gray-700">
             {orders.map(order => (
-              <tr key={order.id} className="border-b">
+             <tr key={order.id} onClick={() => handleRowClick(order.id)} className="border-b cursor-pointer hover:bg-gray-100">
                 <td className="py-4 px-4">{order.id}</td>
                 <td className="py-4 px-4">{order.client}</td>
                 <td className="py-4 px-4">{order.address}</td>
