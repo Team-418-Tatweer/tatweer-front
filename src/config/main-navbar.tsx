@@ -6,6 +6,7 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { RiShieldUserLine, RiShoppingBag3Line } from "react-icons/ri";
 import { TbBuildingWarehouse } from "react-icons/tb";
 import { ROUTES } from "./routes";
+import { FiAlertTriangle } from "react-icons/fi";
 
 export const navData: INavItem[] = [
   {
@@ -29,6 +30,7 @@ export const navData: INavItem[] = [
   {
     title: "Products",
     Icon: <RiShoppingBag3Line />,
+    path: "/dashboard/products",
     childs: [
       { title: "All Products", path: "/dashboard/products/All" },
       { title: "Prodcut Analytics", path: "/dashboard/products/reports" },
@@ -53,6 +55,12 @@ export const navData: INavItem[] = [
       { title: "Inventory Reports", path: "/reports/inventory" },
       { title: "Financial Reports", path: "/reports/financial" },
     ],
+  },
+  {
+    title: "Alerts & Suggestions",
+    path: ROUTES.alerts.base,
+    Icon: <FiAlertTriangle />,
+    childs: [{ title: "All Alerts", path: ROUTES.alerts.base }],
   },
   {
     title: "Manage Team",

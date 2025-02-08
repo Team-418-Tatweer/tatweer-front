@@ -6,7 +6,7 @@ import { FaPlus, FaComment, FaBell, FaSearch, FaSlidersH } from "react-icons/fa"
 export function DashboardHeader() {
   const { user } = useUser();
   return (
-    <header className="h-28 sticky top-0 bg-white flex items-center justify-between p-4 border-b-4 border-primary">
+    <header className="h-28 z-10 relative top-0 bg-white flex items-center justify-between p-4 border-b border-primary">
       <div className="flex items-center w-full max-w-2xl mx-auto">
         <div className="relative w-full">
           <input
