@@ -6,7 +6,7 @@ import { _orders } from "@/mock/_orders";
 export function OrdersListComponent() {
   return (
     <main>
-      <h1 className="text-primary text-4xl my-3">
+      <h1 className="text-primary text-2xl my-3">
         <Link href={ROUTES.sales.ordersList} className="font-extrabold">
           Sales
         </Link>{" "}
